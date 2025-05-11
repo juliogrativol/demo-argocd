@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: java-container
-        image: java-app:latest
+        image: java-app:2.0
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
