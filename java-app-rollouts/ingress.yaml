@@ -1,16 +1,16 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: java-app
+  name: java-app-rollouts
 spec:
   rules:
-  - host: java-app.local
+  - host: java-app-rollouts.local
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: java-app
+            name: java-app-rollouts
             port:
               number: 80

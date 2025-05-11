@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: java-app
+  name: java-app-rollouts
 spec:
   selector:
-    app: java-app
+    app: java-app-rollouts
   ports:
   - port: 80
     targetPort: 8080
